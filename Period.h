@@ -1,4 +1,4 @@
-
+#include <bits/stdc++.h>
 class Period{
     
     struct duration{
@@ -10,4 +10,4 @@ class Period{
     string Class="";
     Teacher teacher;
 
-}
+};
