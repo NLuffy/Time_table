@@ -5,7 +5,6 @@
 using namespace std;
 
 class Period{
-    
     private:
     string subject;
     string Class;
