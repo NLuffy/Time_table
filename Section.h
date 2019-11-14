@@ -14,6 +14,8 @@ class Section {
     vector<Period> timeTable;
 
     public:
+    Section(int nPeriods, int nSubjects, string class_name);
+    ~Section();
 }
 
 #endif

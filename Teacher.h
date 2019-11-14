@@ -1,6 +1,7 @@
 #ifndef TEACHER_H
 #define TEACHER_H
 #include <bits/stdc++.h>
+#include "Period.h"
 
 using namespace std;
 
