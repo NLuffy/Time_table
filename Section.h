@@ -11,11 +11,11 @@ class Section {
     int numPeriods;
     int numSubjects;
     string name;
-    vector<Period> timeTable;
 
     public:
+    vector<vector<Period>> timeTable;
     Section(int nPeriods, int nSubjects, string class_name);
     ~Section();
-}
+};
 
 #endif
