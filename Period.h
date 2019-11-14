@@ -2,6 +2,7 @@
 #include <bits/stdc++.h>
 #include<string.h>
 
+using namespace std;
 class Period{
     
     struct duration{
@@ -9,7 +10,7 @@ class Period{
         int minutes;
     };
 
-    
+
 
     string subject;
     string Class;
