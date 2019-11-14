@@ -5,33 +5,22 @@
 
 using namespace std;
 
-#define PRIMARY 0
-#define MIDDLE 1
-#define SECONDARY 2
-#define SENIOR_SECONDARY 3
-// #define Mr 0
-// #define Ms 1
-// #define Mrs 2
-// #define Dr 3
+// #define PRIMARY 0
+// #define MIDDLE 1
+// #define SECONDARY 2
+// #define SENIOR_SECONDARY 3
 
 class Teacher {
     private:
         string name;
-        // struct name {
-        //     int salutation;
-        //     string firstName;
-        //     string middleName;
-        //     string lastName;
-        // } name;
         int maxPeriodsPerDay;
-    
-        unordered_map<string, vector<int>> qualifications;
-        vector< vector<Period> > teacher_time_table;
+        unordered_map< string, set<int> > qualifications; // subject and qualification(in Primary or Secondary or Senior_Secondary)
+        vector< vector<Period> > teacher_time_table; // period per day (total 5 periods)
 
     public:
-        // void setName(string salut, string firstName = "", string lastName = "", string middleName = "");
-        // void setMaxPeriods(int periods);
         Teacher(string name, int maxPeriodsPerDay);
+        void setQualification(string sub, set<int>&qual);
+
         string getName();
         int getMaxPeriods();
         ~Teacher();
