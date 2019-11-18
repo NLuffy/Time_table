@@ -8,15 +8,15 @@ using namespace std;
 
 class Section {
     private:
-    int numPeriods;
-    int numSubjects;
-    string name;
+        int numPeriods;
+        int numSubjects;
+        string name;
 
     public:
-    Section();
-    vector<vector<Period>> timeTable;
-    Section(int nPeriods, int nSubjects, string class_name);
-    ~Section();
+        Section();
+        vector<vector<Period>> timeTable;
+        Section(int nPeriods, int nSubjects, string class_name);
+        ~Section();
 };
 
 #endif

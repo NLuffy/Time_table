@@ -8,16 +8,16 @@ using namespace std;
 
 class Period{
     private:
-    string subject;
-    string Class;
-    Teacher teacher;
-    Time startTime;
-    Time endTime;
+        string subject;
+        string Class;
+        Teacher teacher;
+        Time startTime;
+        Time endTime;
 
     public:
-    Period();
-    Period(string sub, string sec_name, string teacher_name, Time startTime, Time endTime);
-    ~Period();
+        Period();
+        Period(string sub, string sec_name, string teacher_name, Time startTime, Time endTime);
+        ~Period();
 };
 
 
