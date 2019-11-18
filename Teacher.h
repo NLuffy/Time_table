@@ -20,7 +20,7 @@ class Teacher {
         Teacher();
         Teacher(string name, int maxPeriodsPerDay=GlobalVariables::periodsPerDay);
         void setQualification(string sub, unordered_set<int>&qual);
-
+        unordered_map<string, unordered_set<int>> getQualifications();
         string getName();
         int getMaxPeriods();
         ~Teacher();

@@ -18,3 +18,7 @@ void Teacher::setQualification(string sub, unordered_set<int>&qual){
 Teacher::~Teacher(){
     return;
 }
+
+unordered_map<string, unordered_set<int>> Teacher::getQualifications() {
+    return this->qualifications;
+}

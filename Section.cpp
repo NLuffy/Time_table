@@ -20,3 +20,15 @@ Section::~Section() {
     return;
 }
 
+int Section::getNumPeriods() {
+    return this->numPeriods;
+}
+
+string Section::getName() {
+    return this->name;
+}
+
+vector<string> Section::getSubjects() {
+    return this->subjects;
+}
+

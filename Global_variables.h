@@ -2,6 +2,8 @@
 #include "Teacher.h"
 #include "Section.h"
 
+using namespace std;
+
 class GlobalVariables {
     public:
         static unordered_map<string, Teacher> nameToTeacher;

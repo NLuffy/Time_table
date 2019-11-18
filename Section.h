@@ -15,6 +15,9 @@ class Section {
     public:
         Section();
         vector<vector<Period>> timeTable;
+        string getName();
+        int getNumPeriods();
+        vector<string> getSubjects();
         Section(int nPeriods, vector<string> &subjects, string class_name);
         ~Section();
 };
