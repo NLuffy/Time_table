@@ -6,7 +6,7 @@ Teacher::Teacher(string name, int maxPeriodsPerDay){
     this->maxPeriodsPerDay= maxPeriodsPerDay;
     this->teacher_time_table.resize(7);
 }
-Teacher::void setQualification(string sub, set<int>&qual){
+void Teacher::setQualification(string sub, set<int>&qual){
     this->qualifications[sub]=qual;
 }
 
