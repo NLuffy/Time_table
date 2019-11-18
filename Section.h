@@ -13,6 +13,7 @@ class Section {
     string name;
 
     public:
+    Section();
     vector<vector<Period>> timeTable;
     Section(int nPeriods, int nSubjects, string class_name);
     ~Section();

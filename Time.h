@@ -10,6 +10,7 @@ class Time {
     int min;
 
     public:
+    Time();
     Time(int hr, int min);
     ~Time();
     int subtract(Time t2);
