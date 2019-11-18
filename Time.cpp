@@ -3,6 +3,12 @@
 
 using namespace std;
 
+Time::Time() {
+    this->hr = 0;
+    this->min = 0;
+    return;
+}
+
 Time::Time(int hr, int min) {
     this->hr = hr;
     this->min = min;

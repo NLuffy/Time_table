@@ -1,13 +1,17 @@
 #include "Teacher.h"
-#include "Global_variables.h"
 
-Teacher::Teacher(string name, int maxPeriodsPerDay){
+Teacher::Teacher() {
+    this->name = "";
+    this->maxPeriodsPerDay = 0;
+}
+
+Teacher::Teacher(string name, int maxPeriodsPerDay=GlobalVariables::periodsPerDay) {
     this->name=name;
     this->maxPeriodsPerDay= maxPeriodsPerDay;
 
-    this->teacher_time_table=vector<vector<Period>> (global.WeekDays, vector<Period>(global.periodsPerDay));
+    // this->teacher_time_table=vector<vector<Period>>(GlobalVariables::WeekDays, vector<Period>(GlobalVariables::periodsPerDay));
 }
-Teacher::void setQualification(string sub, set<int>&qual){
+void Teacher::setQualification(string sub, unordered_set<int>&qual){
     this->qualifications[sub]=qual;
 }
 

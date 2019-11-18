@@ -9,17 +9,17 @@ using namespace std;
 // #define MIDDLE 1
 // #define SECONDARY 2
 // #define SENIOR_SECONDARY 3
-
 class Teacher {
     private:
         string name;
         int maxPeriodsPerDay;
-        unordered_map< string, set<int> > qualifications; // subject and qualification(in Primary or Secondary or Senior_Secondary)
-        vector< vector<Period> > teacher_time_table; // period per day (total 5 periods)
+        unordered_map< string, unordered_set<int> > qualifications; // subject and qualification(in Primary or Secondary or Senior_Secondary)
+        // vector< vector<Period> > teacher_time_table; // period per day (total 5 periods)
 
     public:
-        Teacher(string name, int maxPeriodsPerDay);
-        void setQualification(string sub, set<int>&qual);
+        Teacher();
+        Teacher(string name, int maxPeriodsPerDay=GlobalVariables::periodsPerDay);
+        void setQualification(string sub, unordered_set<int>&qual);
 
         string getName();
         int getMaxPeriods();
