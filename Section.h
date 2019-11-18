@@ -9,13 +9,13 @@ using namespace std;
 class Section {
     private:
         int numPeriods;
-        int numSubjects;
+        vector<string> subjects;
         string name;
 
     public:
         Section();
         vector<vector<Period>> timeTable;
-        Section(int nPeriods, int nSubjects, string class_name);
+        Section(int nPeriods, vector<string> &subjects, string class_name);
         ~Section();
 };
 
