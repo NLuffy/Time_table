@@ -1,9 +1,6 @@
 #ifndef INPUT_H
 #define INPUT_H
-#include "Teacher.h"
-#include "Section.h"
-#include "Global_variables.h"
-#include "Time.h"
+#include "School.h"
 
 class Input {
     private:

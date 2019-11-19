@@ -2,7 +2,6 @@
 #define SECTION_H
 
 #include <bits/stdc++.h>
-#include "Period.h"
 
 using namespace std;
 
@@ -14,7 +13,6 @@ class Section {
 
     public:
         Section();
-        vector<vector<Period>> timeTable;
         string getName();
         int getNumPeriods();
         vector<string> getSubjects();

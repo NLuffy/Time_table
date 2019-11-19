@@ -16,7 +16,7 @@ class Period{
 
     public:
         Period();
-        Period(string sub, string sec_name, string teacher_name, Time startTime, Time endTime);
+        Period(string sub, string sec_name, Teacher teacher, Time startTime, Time endTime);
         ~Period();
 };
 
