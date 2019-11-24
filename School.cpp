@@ -49,3 +49,11 @@ vector<Section> School::getSections() {
 vector<Teacher> School::getTeachers() {
     return this->teachers;
 }
+
+int School::getNumberOfTotalPeriods() {
+    int total = 0;
+    for (int i = 0; i < this->sections.size(); i++) {
+        total += this->sections[i].getSubjects().size();
+    }
+    return total;
+}

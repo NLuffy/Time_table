@@ -18,7 +18,8 @@ class School {
         Time endTime;
         vector<Section> sections;
         vector<Teacher> teachers;
-    
+        int getNumberOfTotalPeriods();
+
     public:
         unordered_map<string, vector<vector<Period>>> schoolTimeTable;
         unordered_map<int, vector<vector<Period>>> teacherTimeTable;
